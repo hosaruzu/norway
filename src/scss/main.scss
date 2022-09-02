@@ -5,6 +5,15 @@
 @import 'settings';
 
 // small bem-components
+@import './components/typography';
+@import './components/form';
 
 // sections
 @import './components/header';
+@import './components/hero';
+@import './components/activities';
+@import './components/about';
+@import './components/beauties';
+@import './components/partners';
+@import './components/testimonials';
+@import './components/footer';

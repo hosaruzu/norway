@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="ru" class="page">
+<html lang="en" class="page">
   @include('partials/head.html')
 
   <body class="page__body">
     <div class="site-container">
       @include('partials/header.html')
-      <main class="main"></main>
-      @include('partials/footer.html')
-      @include('partials/footer.html')
-
-      <!-- @include('html/h1.html') example-->
+      <main class="main">
+        <!-- hero -->
+        @include('partials/hero.html')
+        <!-- activities -->
+        @include('partials/activities.html')
+        <!-- about -->
+        @include('partials/about.html')
+        <!-- beauties -->
+        @include('partials/beauties.html')
+        <!-- partners -->
+        @include('partials/partners.html')
+        <!-- testimonials -->
+        @include('partials/testimonials.html')
+      </main>
     </div>
   </body>
 </html>
