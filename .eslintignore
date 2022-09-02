@@ -1,0 +1,6 @@
+node_modules
+dist
+
+test/fixtures
+**/app/public
+src/main.js
