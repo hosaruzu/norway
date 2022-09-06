@@ -1,6 +1,9 @@
 html {
   box-sizing: border-box;
+  font-family: var(--ff-montserrat);
+  font-weight: 600;
   font-size: 62.5%;
+  color: var(--color-mine-shaft);
 }
 
 *,
@@ -89,10 +92,22 @@ a {
   clip: rect(0 0 0 0);
 }
 
-.container {
+.container-big {
   margin: 0 auto;
   padding: 0 var(--container-offset);
-  max-width: var(--container-width);
+  max-width: var(--container-big);
+}
+
+.container-med {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-med);
+}
+
+.container-sm {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-sm);
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

@@ -2,8 +2,8 @@
 
 :root {
   // font-family
-  --ff-manropy: 'Manropy', sans-serif;
-  --ff-mantserrat: 'Montserrat', sans-serif;
+  --ff-manrope: 'Manrope', sans-serif;
+  --ff-montserrat: 'Montserrat', sans-serif;
   --ff-roboto: 'Roboto', sans-serif;
 
   // colors
@@ -12,4 +12,13 @@
   --color-dusty-gray: #9b9b9b;
   --color-dove-gray: #6d6d6d;
   --color-mine-shaft: #2d2d2d;
+
+  // containers
+  --content-big: 187rem;
+  --content-med: 180.5rem;
+  --content-sm: 169.6rem;
+  --container-offset: 1rem;
+  --container-big: calc(var(--content-big) + (var(--container-offset) * 2));
+  --container-med: calc(var(--content-med) + (var(--container-offset) * 2));
+  --container-sm: calc(var(--content-sm) + (var(--container-offset) * 2));
 }
