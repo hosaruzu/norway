@@ -1,11 +1,12 @@
 // setup
-@import 'vars';
 @import 'mixins';
 @import 'fonts';
+@import 'vars';
 @import 'settings';
 
 // small bem-components
 @import './components/typography';
+@import './components/nav';
 @import './components/plan-card';
 @import './components/activities-card';
 @import './components/booking-card';
