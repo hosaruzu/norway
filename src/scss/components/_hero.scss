@@ -1,7 +1,7 @@
 .hero {
   padding-top: 35rem;
-  padding-bottom: 8.4rem;
-  height: 120.4rem;
+  padding-bottom: 10rem;
+  height: 90vh;
   background-image: url('../img/hero-bg.jpg');
   background-position: center;
   background-size: cover;
@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    gap: 32rem;
+    gap: 8rem;
   }
 
   &__socials-list {
@@ -78,10 +78,24 @@
     }
   }
 
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__bottom {
+    margin-top: auto;
+  }
+
+  &__title-box,
+  &__plan {
+    margin: 0 auto;
+  }
+
   &__top,
   &__bottom {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
 }
