@@ -64,4 +64,8 @@
   &:hover svg {
     fill: var(--color-light);
   }
+
+  &:active {
+    transform: translateY(-2px);
+  }
 }

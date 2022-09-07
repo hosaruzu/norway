@@ -71,10 +71,13 @@
       transition: opacity 0.2s, transform 0.2s;
     }
 
-    &:hover,
-    &:active {
+    &:hover {
       opacity: 1;
       transform: rotate(-180deg) translateY(-5px);
+    }
+
+    &:active {
+      transform: rotate(-180deg) translateY(-1px);
     }
   }
 
