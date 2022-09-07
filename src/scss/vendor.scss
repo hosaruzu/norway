@@ -1,3 +1,4 @@
+/* stylelint-disable */
 @import './vendor/normalize';
 
 // modal
@@ -10,4 +11,4 @@
 // @import "../../node_modules/aos/dist/aos";
 
 // swiper
-// @import "../../node_modules/swiper/swiper-bundle.min";
+@import '../../node_modules/swiper/swiper-bundle.min';

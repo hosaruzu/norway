@@ -6,7 +6,7 @@
   -webkit-text-fill-color: transparent;
   color: transparent;
   background: linear-gradient(47.06deg, #000 -3.87%, rgb(255 255 255 / 0%) 14.89%), #fff;
-  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .main-subtitle {
@@ -17,4 +17,22 @@
   text-align: center;
   text-transform: uppercase;
   color: rgb(255 255 255 / 70%);
+}
+
+.heading {
+  &__subtitle {
+    margin-bottom: 2.7rem;
+    line-height: 2rem;
+    letter-spacing: 0.7em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-tundora);
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 4.6rem;
+    line-height: 5.6rem;
+    text-align: center;
+  }
 }

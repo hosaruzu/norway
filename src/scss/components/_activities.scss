@@ -1,0 +1,90 @@
+.activities {
+  position: relative;
+  padding-top: 18rem;
+  padding-bottom: 9rem;
+  height: 90vh;
+
+  &__heading {
+    padding-bottom: 8.6rem;
+  }
+
+  &__content {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 147.9rem;
+    height: 62rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  &__button-prev {
+    left: 12rem;
+
+    span {
+      align-self: flex-start;
+    }
+  }
+
+  &__button-next {
+    right: 8rem;
+
+    span {
+      align-self: flex-end;
+    }
+  }
+
+  &__button-prev,
+  &__button-next {
+    position: absolute;
+    top: 55%;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-55%);
+    cursor: pointer;
+    gap: 3rem;
+
+    svg {
+      width: 4.2rem;
+      height: 1rem;
+      fill: var(--color-dusty-gray);
+      transition: fill 0.2s;
+    }
+
+    span {
+      display: block;
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-mine-shaft);
+      transition: transform 0.2s, color 0.2s;
+      user-select: none;
+    }
+
+    &:hover span {
+      transform: translateY(-1rem);
+    }
+
+    &:active svg {
+      fill: var(--color-mine-shaft);
+    }
+  }
+}
+
+.swiper-button-disabled {
+  cursor: no-drop;
+
+  span {
+    color: var(--color-dusty-gray);
+    transform: translateY(-1rem);
+  }
+
+  &:active svg {
+    fill: var(--color-dusty-gray);
+  }
+}
