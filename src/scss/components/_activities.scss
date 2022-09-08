@@ -80,11 +80,15 @@
   cursor: no-drop;
 
   span {
-    color: var(--color-dusty-gray);
+    color: var(--color-wide-sand);
     transform: translateY(-1rem);
   }
 
+  svg {
+    fill: var(--color-wide-sand);
+  }
+
   &:active svg {
-    fill: var(--color-dusty-gray);
+    fill: var(--color-wide-sand);
   }
 }
