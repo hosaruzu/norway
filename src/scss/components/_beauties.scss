@@ -1,0 +1,52 @@
+.beauties {
+  position: relative;
+  padding: 9rem 0 32rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 44rem;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 56.9rem;
+    background-color: var(--color-wide-sand);
+  }
+
+  &__heading {
+    margin-bottom: 8.6rem;
+  }
+
+  &__places {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9rem;
+  }
+
+  &__form {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    border: none;
+    border-radius: 5px;
+    padding: 2.7rem 12.9rem 2.6rem 2.6rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--color-light);
+    background-color: #3d3d3d;
+    transition: background-color 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-mine-shaft);
+    }
+  }
+}

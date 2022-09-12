@@ -1,0 +1,33 @@
+.booking-card {
+  &__content {
+    display: flex;
+    margin-top: 1.1rem;
+    gap: 3.7rem;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.7rem;
+    color: #000;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    color: #959595;
+  }
+
+  &__rating {
+    align-self: center;
+    transform: translateY(-1.7rem);
+  }
+}

@@ -1,0 +1,120 @@
+<section class="beauties">
+  <h2 class="visually-hidden">Book and explore our beauties</h2>
+  <div class="container-med">
+    <div class="heading beauties__heading">
+      <p class="heading__subtitle">Beauties</p>
+      <h3 class="heading__title">Hotels and Apartments</h3>
+    </div>
+    <div class="beauties__places">
+      <div class="booking-card">
+        <img alt="Picture of Reine" class="booking-card__img" src="img/beauty-1.jpg" />
+        <div class="booking-card__content">
+          <div class="booking-card__description">
+            <div class="booking-card__title">Reine</div>
+            <div class="booking-card__price">$720</div>
+          </div>
+          <div class="rating booking-card__rating">
+            <input checked id="reine-5" name="reine-rating" type="radio" value="5" /><label
+              for="reine-5"
+            ></label>
+            <input id="reine-4" name="reine-rating" type="radio" value="4" /><label
+              for="reine-4"
+            ></label>
+            <input id="reine-3" name="reine-rating" type="radio" value="3" /><label
+              for="reine-3"
+            ></label>
+            <input id="reine-2" name="reine-rating" type="radio" value="2" /><label
+              for="reine-2"
+            ></label>
+            <input id="reine-1" name="reine-rating" type="radio" value="1" /><label
+              for="reine-1"
+            ></label>
+          </div>
+        </div>
+      </div>
+      <div class="booking-card">
+        <img alt="Picture of Norway" class="booking-card__img" src="img/beauty-2.jpg" />
+        <div class="booking-card__content">
+          <div class="booking-card__description">
+            <div class="booking-card__title">Norway</div>
+            <div class="booking-card__price">$350</div>
+          </div>
+          <div class="rating booking-card__rating">
+            <input id="norway-5" name="norway-rating" type="radio" value="5" /><label
+              for="norway-5"
+            ></label>
+            <input checked id="norway-4" name="norway-rating" type="radio" value="4" /><label
+              for="norway-4"
+            ></label>
+            <input id="norway-3" name="norway-rating" type="radio" value="3" /><label
+              for="norway-3"
+            ></label>
+            <input id="norway-2" name="norway-rating" type="radio" value="2" /><label
+              for="norway-2"
+            ></label>
+            <input id="norway-1" name="norway-rating" type="radio" value="1" /><label
+              for="norway-1"
+            ></label>
+          </div>
+        </div>
+      </div>
+      <div class="booking-card">
+        <img alt="Picture of Bergen" class="booking-card__img" src="img/beauty-3.jpg" />
+        <div class="booking-card__content">
+          <div class="booking-card__description">
+            <div class="booking-card__title">Bergen</div>
+            <div class="booking-card__price">$670</div>
+          </div>
+          <div class="rating booking-card__rating">
+            <input id="bergen-5" name="bergen-rating" type="radio" value="5" /><label
+              for="bergen-5"
+            ></label>
+            <input id="bergen-4" name="bergen-rating" type="radio" value="4" /><label
+              for="bergen-4"
+            ></label>
+            <input checked id="bergen-3" name="bergen-rating" type="radio" value="3" /><label
+              for="bergen-3"
+            ></label>
+            <input id="bergen-2" name="bergen-rating" type="radio" value="2" /><label
+              for="bergen-2"
+            ></label>
+            <input id="bergen-1" name="bergen-rating" type="radio" value="1" /><label
+              for="bergen-1"
+            ></label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form action="#" class="beauties__form">
+      <div class="date-picker">
+        <label class="date-picker__label" for="date">Date</label>
+        <input
+          class="date date-picker__input"
+          id="date"
+          name="date"
+          placeholder="Thu, 28 Dec"
+          type="text"
+        />
+        <span class="date-picker__arrow"></span>
+      </div>
+      <div class="select-picker">
+        <label class="select__label" for="location-select">Location</label>
+        <select class="select" id="location-select" name="location">
+          <option value="norway">Norway</option>
+          <option value="finland">Finland</option>
+          <option value="sweden">Sweden</option>
+        </select>
+      </div>
+      <div class="select-picker">
+        <label class="select__label" for="place-select">Place</label>
+        <select class="select" id="place-select" name="place">
+          <option value="loften">Loften</option>
+          <option value="trondheim">Trondheim</option>
+          <option value="geirangerfjord">Geirangerfjord</option>
+        </select>
+      </div>
+      <button type="submit" class="beauties__btn">Search</button>
+    </form>
+  </div>
+</section>
