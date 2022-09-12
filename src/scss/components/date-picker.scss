@@ -1,0 +1,112 @@
+.date-picker {
+  padding: 10rem;
+
+  &__label {
+    display: block;
+    margin-bottom: 1.1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 3px;
+    color: var(--color-dusty-gray);
+  }
+
+  .datepicker-input {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #dbdbdb;
+    border-radius: 0.5rem;
+    padding: 7.5px 22px 3.75px;
+    width: 32.1rem;
+    height: 7.5rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    letter-spacing: 1px;
+    color: #4e4e4e;
+    background-color: var(--color-wide-sand);
+
+    &::placeholder {
+      color: #4e4e4e;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: inset 0 0 2px var(--color-tundora);
+    }
+  }
+
+  &__arrow {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -28.5rem;
+      top: -4rem;
+      width: 1.3rem;
+      height: 0.8rem;
+      background-image: url('../img/svg/arrow-down.svg');
+      background-repeat: no-repeat;
+      transition: transform 0.2s;
+    }
+  }
+}
+
+.datepicker-grid {
+  width: 31.5rem;
+  height: 25rem;
+  font-weight: 500;
+}
+
+.datepicker {
+  width: 31.5rem;
+  height: 30rem;
+}
+
+.datepicker-picker {
+  background-color: var(--color-wide-sand);
+}
+
+.datepicker-header .datepicker-controls .button {
+  background-color: var(--color-wide-sand);
+  transition: background-color 0.2s;
+}
+
+.datepicker-input.focus-visible ~ .date-picker__arrow::after {
+  transform: rotate(180deg);
+}
+
+.date-picker .date-picker-input:active ~ .date-picker__label {
+  display: none;
+}
+
+.datepicker-cell,
+.datepicker-view .week {
+  height: 3.25rem;
+}
+
+.datepicker-cell:not(.disabled):hover {
+  background-color: var(--color-dusty-gray);
+  cursor: pointer;
+}
+
+.datepicker-cell.selected,
+.datepicker-cell:not(.disabled) {
+  transition: background-color 0.2s;
+}
+
+.datepicker-cell.selected,
+.datepicker-cell.selected:hover {
+  background-color: var(--color-mine-shaft);
+}
+
+.datepicker-header .datepicker-controls .button:hover {
+  background-color: var(--color-dusty-gray);
+}
+
+.datepicker-cell.today:not(.selected),
+.datepicker-cell.today.focused:not(.selected) {
+  background-color: var(--color-dusty-gray);
+}
