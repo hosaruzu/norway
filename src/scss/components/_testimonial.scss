@@ -1,0 +1,75 @@
+.testimonial {
+  margin: 0;
+  padding: 0;
+  max-width: 35rem;
+
+  &__speech {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    border-radius: 1rem;
+    padding: 3rem 1.2rem 0 3.7rem;
+    min-height: 19.2rem;
+    font-family: var(--ff-roboto);
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: var(--color-tundora);
+    background-image: url('../img/star.svg');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-color: var(--color-light);
+
+    &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &--bottom {
+      &::after {
+        left: 10%;
+        bottom: -1.5rem;
+        width: 2.4rem;
+        height: 1.55rem;
+        background-image: url('../img/speech-arrow.svg');
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__quotemark {
+    position: absolute;
+    left: 3.2rem;
+    top: 2rem;
+    display: block;
+    font-family: var(--ff-manrope);
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 98px;
+    color: #ff9921;
+    opacity: 0.4;
+  }
+
+  &__additional {
+    display: flex;
+    align-items: center;
+    padding-left: 6%;
+    color: var(--color-light);
+    gap: 1.6rem;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  &__position {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    opacity: 0.7;
+  }
+}
