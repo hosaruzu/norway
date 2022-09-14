@@ -71,18 +71,10 @@
 
 .choices__list--dropdown,
 .choices__list[aria-expanded] {
-  position: absolute;
-  top: 100%;
   z-index: 1;
-  overflow: hidden;
-  margin-top: -1px;
   border: 1px solid #dbdbdb;
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
-  width: 100%;
-  word-break: break-all;
-  visibility: hidden;
-  will-change: visibility;
 }
 
 .choices__list--dropdown .choices__item,
