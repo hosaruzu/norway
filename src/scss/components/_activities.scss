@@ -1,5 +1,4 @@
 .activities {
-  position: relative;
   padding-top: 18rem;
   padding-bottom: 9rem;
 
@@ -10,18 +9,16 @@
   &__content {
     overflow: hidden;
     margin: 0 auto;
-    width: 147.9rem;
-    height: 62rem;
+    max-width: 147.9rem;
+    max-height: 62rem;
   }
 
   &__wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
+    position: relative;
   }
 
   &__button-prev {
-    left: 12rem;
+    left: 0;
 
     span {
       align-self: flex-start;
@@ -29,7 +26,7 @@
   }
 
   &__button-next {
-    right: 8rem;
+    right: 0;
 
     span {
       align-self: flex-end;
@@ -39,10 +36,11 @@
   &__button-prev,
   &__button-next {
     position: absolute;
-    top: 55%;
+    top: 60%;
     display: flex;
     flex-direction: column;
-    transform: translate(-55%);
+    padding: 0 2rem;
+    transform: translateY(-50%);
     cursor: pointer;
     gap: 3rem;
 
