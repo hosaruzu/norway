@@ -42,3 +42,11 @@
     transform: translateY(-1.7rem);
   }
 }
+
+.star-rating {
+  background: url('../img/star-off.svg') !important;
+}
+
+.star-rating .star-value {
+  background: url('../img/star-on.svg') !important;
+}
