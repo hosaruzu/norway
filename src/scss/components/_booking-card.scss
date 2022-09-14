@@ -1,4 +1,15 @@
 .booking-card {
+  &__img-box {
+    overflow: hidden;
+    border-radius: 0.8rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   &__content {
     display: flex;
     margin-top: 1.1rem;
