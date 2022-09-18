@@ -5,3 +5,4 @@ import './components/star-rating';
 import './components/smooth-scroll';
 import './components/aos';
 import './components/sticky-header';
+import './components/burger';

@@ -8,6 +8,7 @@
   color: var(--color-light);
 
   &__wrapper {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,4 +32,8 @@
   &--sticky &__logo-img {
     filter: invert(1);
   }
+}
+
+.header--sticky .burger {
+  color: var(--color-mine-shaft);
 }
