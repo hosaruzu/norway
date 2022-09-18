@@ -2,7 +2,7 @@ import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 
 Swiper.use([Navigation, Pagination, Autoplay]);
 new Swiper('.activities__content', {
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 25,
   autoplay: {
     delay: 5000,
@@ -11,5 +11,16 @@ new Swiper('.activities__content', {
   navigation: {
     nextEl: '.activities__button-next',
     prevEl: '.activities__button-prev',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    576: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
   },
 });
