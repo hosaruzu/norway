@@ -3,7 +3,10 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["eslint:recommended", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "prettier"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -11,8 +14,12 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["prettier", "html"],
+  "plugins": [
+    "prettier",
+    "html"
+  ],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "no-unused-vars": "off"
   }
 }
