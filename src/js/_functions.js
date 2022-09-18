@@ -2,6 +2,7 @@
 
 // Определение операционной системы на мобильных
 import { mobileCheck } from './functions/mobile-check';
+
 console.log(mobileCheck());
 
 // Определение ширины экрана
@@ -19,7 +20,7 @@ console.log(mobileCheck());
 // Фикс фулскрин-блоков
 // import './functions/fix-fullheight';
 
-// Burder-menu
+// Burger-menu
 // import { burger } from './functions/burger';
 
 // Реализация остановки скролла (не забудьте вызвать функцию)
