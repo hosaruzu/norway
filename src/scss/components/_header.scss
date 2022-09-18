@@ -25,12 +25,16 @@
     max-width: 100%;
     box-shadow: 0 1.2rem 3.2rem rgba(0 0 0 / 1%);
     color: var(--color-mine-shaft);
-    background: rgb(255 255 255 / 60%);
+    background: rgb(255 255 255 / 80%);
     backdrop-filter: blur(4px);
   }
 
   &--sticky &__logo-img {
     filter: invert(1);
+  }
+
+  &--no-blur {
+    backdrop-filter: none;
   }
 }
 

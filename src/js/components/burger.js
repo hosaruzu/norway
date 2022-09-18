@@ -4,10 +4,12 @@ import { disablePageScroll, enablePageScroll } from 'scroll-lock';
   const burger = document.querySelector('[data-burger]');
   const menu = document.querySelector('[data-menu]');
   const menuItems = document.querySelectorAll('[data-menu-item]');
+  const header = document.querySelector('.header');
 
   burger.addEventListener('click', (e) => {
     burger.classList.toggle('burger--active');
     menu?.classList.toggle('nav--active');
+    header.classList.toggle('header--no-blur');
 
     if (menu.classList.contains('nav--active')) {
       burger.setAttribute('aria-expanded', 'true');
