@@ -1,4 +1,22 @@
+@import '../mixins';
+@import '../vars';
+
 .date-picker {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 3.5rem;
+    top: 6.4rem;
+    width: 1.3rem;
+    height: 0.8rem;
+    background-image: url('../img/svg/arrow-down.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.2s;
+  }
+
   &__label {
     display: block;
     margin-bottom: 1.1rem;
@@ -33,22 +51,15 @@
       outline: none;
       box-shadow: inset 0 0 2px var(--color-tundora);
     }
+
+    @include bp($tablet-small) {
+      width: 100%;
+    }
   }
 
-  &__arrow {
-    position: relative;
-
+  &--active {
     &::after {
-      content: '';
-      position: absolute;
-      right: -28.5rem;
-      top: -4rem;
-      width: 1.3rem;
-      height: 0.8rem;
-      background-image: url('../img/svg/arrow-down.svg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      transition: transform 0.2s;
+      transform: rotate(180deg);
     }
   }
 }
@@ -73,7 +84,7 @@
   transition: background-color 0.2s;
 }
 
-.datepicker-input.focus-visible ~ .date-picker__arrow::after {
+.datepicker-input.focus-visible ~ .date-picker__::after {
   transform: rotate(180deg);
 }
 

@@ -7,6 +7,21 @@
   color: transparent;
   background: linear-gradient(47.06deg, #000 -3.87%, rgb(255 255 255 / 0%) 14.89%), #fff;
   -webkit-background-clip: text;
+
+  @include bp($tablet-big) {
+    font-size: 20rem;
+    line-height: 23.5rem;
+  }
+
+  @include bp($tablet-small) {
+    font-size: 16rem;
+    line-height: 20.5rem;
+  }
+
+  @include bp($mobile-big) {
+    font-size: 10rem;
+    line-height: 14.5rem;
+  }
 }
 
 .main-subtitle {
@@ -17,6 +32,21 @@
   text-align: center;
   text-transform: uppercase;
   color: rgb(255 255 255 / 70%);
+
+  @include bp($tablet-big) {
+    font-size: 2.4rem;
+    line-height: 7.7rem;
+  }
+
+  @include bp($tablet-small) {
+    font-size: 2.4rem;
+    line-height: 7.7rem;
+  }
+
+  @include bp($mobile-big) {
+    font-size: 2rem;
+    line-height: 1;
+  }
 }
 
 .heading {
@@ -27,6 +57,10 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--color-tundora);
+
+    @include bp($tablet-big) {
+      font-size: 2rem;
+    }
   }
 
   &__title {
@@ -34,5 +68,9 @@
     font-size: 4.6rem;
     line-height: 5.6rem;
     text-align: center;
+
+    @include bp($tablet-big) {
+      font-size: 4rem;
+    }
   }
 }

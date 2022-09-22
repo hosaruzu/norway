@@ -3,9 +3,6 @@
   --burger-height: 22px;
   --burger-line-height: 3px;
 
-  position: fixed;
-  right: 1.5rem;
-  top: 4rem;
   z-index: 100;
   display: none;
   border: none;
@@ -62,7 +59,6 @@
   }
 
   &--active {
-    right: 3rem;
     color: var(--color-mine-shaft);
 
     &::before {
@@ -95,7 +91,7 @@
     }
   }
 
-  @include bp(1024px) {
+  @include bp($tablet-big) {
     display: block;
   }
 }

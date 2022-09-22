@@ -55,6 +55,11 @@
     line-height: 3.9rem;
     color: var(--color-light);
     transition: color 0.2s;
+
+    @include bp($tablet-small) {
+      font-size: 2.8rem;
+      line-height: 3.2rem;
+    }
   }
 
   &:hover &__picture {

@@ -1,4 +1,4 @@
-// for using scss variables delete root
+// for using sc`§ss variables delete root
 
 :root {
   // font-family
@@ -23,3 +23,11 @@
   --container-med: calc(var(--content-med) + (var(--container-offset) * 2));
   --container-sm: calc(var(--content-sm) + (var(--container-offset) * 2));
 }
+
+$desktop-large: 104em; // 1664
+$desktop-big: 90em; // 1440
+$desktop-small: 79em; // 1264
+$tablet-big: 64em; // 1024
+$tablet: 59em; // 944
+$tablet-small: 49em; // 784
+$mobile-big: 41em; // 656

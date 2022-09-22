@@ -11,6 +11,14 @@
     margin: 0 auto;
     max-width: 147.9rem;
     max-height: 62rem;
+
+    @include bp($desktop-large) {
+      max-width: 120rem;
+    }
+
+    @include bp($desktop-big) {
+      max-width: 110rem;
+    }
   }
 
   &__wrapper {
@@ -69,6 +77,10 @@
 
     &:active svg {
       fill: var(--color-mine-shaft);
+    }
+
+    @include bp($tablet-big) {
+      display: none;
     }
   }
 }

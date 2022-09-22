@@ -1,6 +1,14 @@
 .plan {
   display: flex;
   gap: 2.7rem;
+
+  @include bp($desktop-big) {
+    gap: 4rem;
+  }
+
+  @include bp($mobile-big) {
+    flex-direction: column;
+  }
 }
 
 .plan-card {
@@ -9,7 +17,7 @@
   align-items: center;
   border-radius: 5px;
   padding: 3.4rem 0 2.6rem 3.5rem;
-  width: 417px;
+  width: 41.7rem;
   background: rgb(255 255 255 / 10%);
   transition: transform 0.2s;
   backdrop-filter: blur(0.7px);
@@ -67,5 +75,29 @@
 
   &:active {
     transform: translateY(-2px);
+  }
+
+  @include bp($desktop-big) {
+    width: 32rem;
+  }
+
+  @include bp($tablet) {
+    width: 41.7rem;
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+  @include bp($tablet-small) {
+    width: 32rem;
+  }
+
+  @include bp($mobile-big) {
+    padding: 2.7rem 0 2.6rem 3rem;
+
+    &:not(:first-child) {
+      display: none;
+    }
   }
 }

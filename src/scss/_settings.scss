@@ -4,6 +4,10 @@ html {
   font-weight: 600;
   font-size: 62.5%;
   color: var(--color-mine-shaft);
+
+  @include bp($desktop-small) {
+    font-size: 50%;
+  }
 }
 
 *,

@@ -7,7 +7,22 @@
     padding: 14.6rem 0 10.9rem;
     background-image: url('../img/testimonials-bg.jpg');
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     gap: 5rem;
+
+    @include bp($tablet) {
+      padding: 14.6rem 2rem 10.9rem;
+    }
+
+    @include bp($mobile-big) {
+      flex-direction: column;
+      align-items: center;
+      padding: 8rem 2rem;
+    }
+  }
+
+  @include bp($mobile-big) {
+    margin-bottom: 10rem;
   }
 }

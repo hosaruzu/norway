@@ -6,9 +6,27 @@
     align-items: center;
     justify-content: center;
     gap: 12.8em;
+
+    @include bp($desktop-big) {
+      gap: 9rem;
+    }
+
+    @include bp($tablet-small) {
+      flex-wrap: wrap;
+    }
   }
 
   &__heading {
     margin-bottom: 8.6rem;
+  }
+
+  @include bp($mobile-big) {
+    margin-top: 8rem;
+  }
+}
+
+.partner {
+  @include bp($tablet-small) {
+    width: 14rem;
   }
 }
