@@ -87,3 +87,17 @@
 .choices__list[aria-expanded] .choices__item {
   padding: 2rem;
 }
+
+.choices .choices__list.choices__list--dropdown {
+  visibility: visible !important;
+}
+
+.choices .choices__list--dropdown,
+.choices .choices__list[aria-expanded] {
+  margin-top: 0;
+}
+
+.choices.is-open .choices__list--dropdown,
+.choices.is-open .choices__list[aria-expanded] {
+  margin-top: -1px;
+}
